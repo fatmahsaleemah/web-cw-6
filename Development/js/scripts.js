@@ -8,32 +8,32 @@
 // تطبع كل قيمة من قيم المصفوفة في ال
 // console -->
 
-// let name = ["fatmah","nada","haya","nora"]
+let name = ["fatmah","nada","haya","nora"]
 
-// function n(name){
-// console.log(name[0])
-// console.log(name[1])
-// console.log(name[2])
-// console.log(name[3])
-// }
+function n(name){
+console.log(name[0])
+console.log(name[1])
+console.log(name[2])
+console.log(name[3])
+}
 
-// logger(name);
+logger(name);
 
 
 // another solution
 
-// function logger(x){
-// for (let i = 0; i< x.length; i++){
-//         console.log(x[i]);
-// }
-// }
-// logger(name);
+function logger(x){
+for (let i = 0; i< x.length; i++){
+        console.log(x[i]);
+}
+}
+logger(name);
 
-// logger(array);
+logger(array);
 
 
 
-// // another solution
+//  another solution
 
 
 var index = 0; 
@@ -47,35 +47,35 @@ function myFunction(item, index)
 
 // // <!-- 2. hottestDays():
 
-// let num = 37
-// let hot = ["38","37","39"]
+let num = 37
+let hot = ["38","37","39"]
 
-// function hottestDays(num){
-// if(num > hot[0]){
-//     console.log("الحراره مرتفعه نسبيا")
-// }
-// else if (num == hot[1]){
-//     console.log("الحراره طبيعيه")
-// }
-// else{
-//     console.log("الحراره جدا عاليه")
-// }
-// }
-// hottestDays();
+function hottestDays(num){
+if(num > hot[0]){
+    console.log("الحراره مرتفعه نسبيا")
+}
+else if (num == hot[1]){
+    console.log("الحراره طبيعيه")
+}
+else{
+    console.log("الحراره جدا عاليه")
+}
+}
+hottestDays();
 
 
-// let temps1 =[20,30,50,60];
-// let value = 40;
-// let temps2 =[];
+let temps1 =[20,30,50,60];
+let value = 40;
+let temps2 =[];
 
-// function hottestDays(array,th, empty_array){
-//     for (let i = 0; i < array.length; i++){
-//         if (array[i] > th){
-//             empty_array.push(array[i]);
-//         }
-//     }
-// }
-// hottestDays();
+function hottestDays(array,th, empty_array){
+    for (let i = 0; i < array.length; i++){
+        if (array[i] > th){
+            empty_array.push(array[i]);
+        }
+    }
+}
+hottestDays();
 
 
 
@@ -85,24 +85,24 @@ function myFunction(item, index)
 
 // <!-- 3. getBookById(bookId, books):
 
-// let name = [
-//  {a:"book1", bookId:"77"},
-//  {a:"book2", bookId:"66"},
-//  {a:"book3", bookId:"44"}
-// ]
-// search = (key, id2 ,inputArray) => {
-//     for (let i=0; i < inputArray.length; i++) {
-//         if (inputArray[i].a === key && inputArray[i].bookId === id2) {
-//             return inputArray[i];
-//         }
-//     }
-//   }
-//  var book = prompt("book");
-//  var id1  = prompt("bookId");
+let name = [
+ {a:"book1", bookId:"77"},
+ {a:"book2", bookId:"66"},
+ {a:"book3", bookId:"44"}
+]
+search = (key, id2 ,inputArray) => {
+    for (let i=0; i < inputArray.length; i++) {
+        if (inputArray[i].a === key && inputArray[i].bookId === id2) {
+            return inputArray[i];
+        }
+    }
+  }
+ var book = prompt("book");
+ var id1  = prompt("bookId");
 
   
-//   var resultObject = search(book, id1, name);
-//   console.log(resultObject);
+  var resultObject = search(book, id1, name);
+  console.log(resultObject);
 
 
 
