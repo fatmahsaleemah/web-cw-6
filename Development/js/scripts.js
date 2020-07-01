@@ -8,55 +8,74 @@
 // تطبع كل قيمة من قيم المصفوفة في ال
 // console -->
 
-let name = ["fatmah","nada","haya","nora"]
+// let name = ["fatmah","nada","haya","nora"]
 
-function n(name){
-console.log(name[0])
-console.log(name[1])
-console.log(name[2])
-console.log(name[3])
-}
+// function n(name){
+// console.log(name[0])
+// console.log(name[1])
+// console.log(name[2])
+// console.log(name[3])
+// }
 
-logger(name);
+// logger(name);
 
 
 // another solution
 
-function logger(x){
-for (let i = 0; i< x.length; i++){
-        console.log(x[i]);
+// function logger(x){
+// for (let i = 0; i< x.length; i++){
+//         console.log(x[i]);
+// }
+// }
+// logger(name);
+
+// logger(array);
+
+
+
+// // another solution
+
+
+var index = 0; 
+let array1 = [ 1, 2, 3, 4, 5, 6 ]; 
+  
+array1.forEach(myFunction); 
+function myFunction(item, index) 
+{ 
+    console.log(item); 
 }
-}
-logger(name);
+
+// // <!-- 2. hottestDays():
+
+// let num = 37
+// let hot = ["38","37","39"]
+
+// function hottestDays(num){
+// if(num > hot[0]){
+//     console.log("الحراره مرتفعه نسبيا")
+// }
+// else if (num == hot[1]){
+//     console.log("الحراره طبيعيه")
+// }
+// else{
+//     console.log("الحراره جدا عاليه")
+// }
+// }
+// hottestDays();
 
 
+// let temps1 =[20,30,50,60];
+// let value = 40;
+// let temps2 =[];
 
-
-
-
-
-// <!-- 2. hottestDays():
-
-
-let num = 37
-let hot = ["38","37","39"]
-
-function hottestDays(num){
-if(num > hot[0]){
-    console.log("الحراره مرتفعه نسبيا")
-}
-else if (num == hot[1]){
-    console.log("الحراره طبيعيه")
-}
-else{
-    console.log("الحراره جدا عاليه")
-}
-}
-hottestDays();
-
-
-
-
+// function hottestDays(array,th, empty_array){
+//     for (let i = 0; i < array.length; i++){
+//         if (array[i] > th){
+//             empty_array.push(array[i]);
+//         }
+//     }
+// }
+// hottestDays();
 
 
 
@@ -116,7 +135,41 @@ hottestDays();
 
 // <!-- -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- -->
 
+let userInput ="";
+let output = [];
+
+userInput = prompt("السلعه");
+while (userInput != "انتهيت"){
+   
+    // if (userInput == "انتهيت") break;
+    let price = parseFloat(prompt("السعر"));
+    let quantity = parseInt(prompt("الكميه"));
+
+let object = { 
+name: userInput,
+price: price,
+quantity: quantity,
+};
+
+output.push(object);
+
+
+userInput = prompt("السلعه");
+}
 
 
 
 
+let totalPrice = 0
+for (let i = 0 ; i < output.length ; i++){
+    console.log(
+        output[i].quantity +
+         " " +
+     output[i].name+
+     " " + 
+    output[i].quantity * output[i].price 
+    );
+    totalPrice +=  output[i].quantity * output[i].price 
+}
+
+console.log()
